@@ -1,17 +1,14 @@
-import React from 'react'
-import './App.css'
-import Header from './components/header/header'
-import Main from './pages/Main'
-import Footer from './components/footer/Footer'
+import { BrowserRouter, Router, Routes, Route } from "react-router-dom";
+import Main from "./pages/Main";
+import Course from "./pages/Course";
 
 function App() {
   return (
-    <div>
-      <Header></Header>
-      <Main></Main>
-      <Footer></Footer>
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<Main />} />
+      <Route path="/course" element={<Course />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;

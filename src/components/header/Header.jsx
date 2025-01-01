@@ -6,25 +6,25 @@ function Header() {
         <header className="bg-white shadow-md">
             <div className="max-w-[1440px] mx-auto px-6 py-4 flex items-center justify-between">
                 <div className="text-blue-600 text-2xl font-bold">
-                    <a href="https://lincor.uz" target="_blank" rel="noopener noreferrer">
+                    <a href="https://lincor" target="_blank" rel="noopener noreferrer">
                         LinCor
                     </a>
                 </div>
 
                 <nav className="hidden md:flex space-x-6">
-                    <a href="#" className="text-gray-700 hover:text-blue-600 transition">
+                    <a href="/course" className="text-gray-700 hover:text-blue-600 transition">
                         Kurslar
                     </a>
-                    <a href="#" className="text-gray-700 hover:text-blue-600 transition">
+                    <a href="/topik" className="text-gray-700 hover:text-blue-600 transition">
                         Topik
                     </a>
-                    <a href="#" className="text-gray-700 hover:text-blue-600 transition">
+                    <a href="/education" className="text-gray-700 hover:text-blue-600 transition">
                         Koreada O'qish
                     </a>
-                    <a href="#" className="text-gray-700 hover:text-blue-600 transition">
+                    <a href="/buy" className="text-gray-700 hover:text-blue-600 transition">
                         To'lov
                     </a>
-                    <a href="#" className="text-gray-700 hover:text-blue-600 transition">
+                    <a href="/contact" className="text-gray-700 hover:text-blue-600 transition">
                         Aloqa
                     </a>
                 </nav>
