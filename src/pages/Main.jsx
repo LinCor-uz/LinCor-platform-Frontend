@@ -10,6 +10,8 @@ import obraznovie from '../../public/obraznovie.png'
 import obraznovie2 from '../../public/obraznovie2.png'
 import obraznovie3 from '../../public/obraznovie3.png'
 import photofx from '../../public/photofx.png'
+import Header from '../components/header/Header';
+import Footer from '../components/footer/Footer';
 
 function Main() {
 
@@ -93,6 +95,7 @@ function Main() {
 
     return (
         <div>
+            <Header></Header>
             <section className="flex flex-col lg:flex-row items-center mt-[60px] justify-center gap-8 lg:gap-48 mb-20 px-4">
                 <div className="flex flex-col lg:flex-row items-center h-auto lg:h-[560px] rounded-[20px] text-white p-10 w-full lg:w-[1386px] bg-[#1D68F9]">
                     <div className="lg:w-1/2">
@@ -369,7 +372,7 @@ function Main() {
                     </div>
                 </div>
             </section>
-
+            <Footer></Footer>
         </div>
     );
 }
