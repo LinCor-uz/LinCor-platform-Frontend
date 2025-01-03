@@ -9,8 +9,8 @@ function Footer() {
     return (
         <div>
             <footer className="bg-gray-100 max-w-[1366px] mx-auto rounded-xl mb-12 text-gray-700 p-6">
-                <div className="container max-w-[1360px] h-[220px] flex gap-[150px]">
-                    <div className='w-[204px] flex flex-col gap-4'>
+                <div className="container max-w-[1360px] h-auto flex flex-wrap gap-8 md:gap-[50px] lg:gap-[150px]">
+                    <div className='w-full md:w-[204px] flex flex-col gap-4'>
                         <a href="lincor" className='text-blue-700 text-[32px] font-extrabold'>LinCor</a>
                         <p className="text-sm">Bizning saytdan foydalanib
                             o’z bilimingizni oshirib boring.</p>
@@ -26,31 +26,31 @@ function Footer() {
                             </a>
                         </span>
                     </div>
-                    <div className='flex flex-col gap-4'>
+                    <div className='flex flex-col gap-4 w-full md:w-auto'>
                         <h3 className='text-[#1A1A1A] text-[24px] font-bold mb-2'>Kurslar</h3>
                         <a className='text-[#5C5C5C] text-[16px] font-normal hover:text-blue-600 ease duration-200' href="">Boshlang‘ich daraja</a>
                         <a className='text-[#5C5C5C] text-[16px] font-normal hover:text-blue-600 ease duration-200' href="">o‘rta daraja</a>
                         <a className='text-[#5C5C5C] text-[16px] font-normal hover:text-blue-600 ease duration-200' href="">yuqori daraja</a>
                     </div>
-                    <div className='flex flex-col gap-4'>
+                    <div className='flex flex-col gap-4 w-full md:w-auto'>
                         <h3 className='text-[#1A1A1A] text-[24px] font-bold mb-2'>Topik</h3>
                         <a className='text-[#5C5C5C] text-[16px] font-normal hover:text-blue-600 ease duration-200' href="">Topik I</a>
                         <a className='text-[#5C5C5C] text-[16px] font-normal hover:text-blue-600 ease duration-200' href="">Topik II</a>
                         <a className='text-[#5C5C5C] text-[16px] font-normal hover:text-blue-600 ease duration-200' href="">EPS-Topik</a>
                     </div>
-                    <div className='flex flex-col gap-4'>
+                    <div className='flex flex-col gap-4 w-full md:w-auto'>
                         <h3 className='text-[#1A1A1A] text-[24px] font-bold mb-2'>Aloqa</h3>
                         <a className='text-[#5C5C5C] text-[16px] font-normal hover:text-blue-600 ease duration-200' href="">Tel: +99899 000-99-01</a>
                         <a className='text-[#5C5C5C] text-[16px] font-normal hover:text-blue-600 ease duration-200' href="">E-mail: examplry@gmail.com</a>
-                        <div className="flex gap-4">
-                            <button className='bg-black items-center rounded-md w-[170px] p-1 flex gap-5'>
+                        <div className="flex flex-wrap gap-4">
+                            <button className='bg-black items-center rounded-md w-full md:w-[170px] p-1 flex gap-5'>
                                 <img src={appstore} alt="App Store" />
                                 <span>
                                     <p className='text-white text-[12px] font-normal'>Dowloand on the</p>
                                     <p className='text-white text-[18px] font-bold'>App Store</p>
                                 </span>
                             </button>
-                            <button className='bg-black items-center rounded-md w-[170px] p-1 flex gap-5'>
+                            <button className='bg-black items-center rounded-md w-full md:w-[170px] p-1 flex gap-5'>
                                 <img className='w-[35px]' src={playmarket} alt="Google Play" />
                                 <span>
                                     <p className='text-white text-[12px] font-normal'>GET IN ON</p>
@@ -63,7 +63,6 @@ function Footer() {
                 <div className="w-full max-w-[1366px] mx-auto border-[1px] border-slate-300 mb-6"></div>
                 <h3>Barcha huquqlar himoyalangan 2023 </h3>
             </footer>
-
         </div>
     )
 }
