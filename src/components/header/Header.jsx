@@ -15,6 +15,7 @@ function Header() {
                     <a href="/course" className="text-gray-700 hover:text-blue-600 transition">
                         Kurslar
                     </a>
+                    
                     <a href="/topik" className="text-gray-700 hover:text-blue-600 transition">
                         Topik
                     </a>
