@@ -5,7 +5,20 @@ import Card from "../components/card/Card";
 import Card2 from "../components/card/Card2";
 import teachervideo from "../../public/confident-teacher.png";
 const Coursereg = () => {
+
+  const videos = [
+    { id: 1, title: "Bo'g'in oxirida ikkitalik undosh bo'lsa", time: "12:34", isActive: true },
+    { id: 2, title: "Bo'g'in oxirida ikkitalik undosh bo'lsa", time: "12:34", isActive: true },
+    { id: 3, title: "Keyingi bo'g'in", time: "10:12", isActive: false },
+    { id: 4, title: "Bo'g'in oxirida ikkitalik undosh bo'lsa", time: "08:45", isActive: false },
+    { id: 5, title: "Keyingi bo'g'in", time: "15:00", isActive: false },
+    { id: 6, title: "Bo'g'in oxirida ikkitalik undosh bo'lsa", time: "09:34", isActive: false },
+    { id: 7, title: "Keyingi bo'g'in", time: "15:50", isActive: false },
+    { id: 8, title: "Bo'g'in oxirida ikkitalik undosh bo'lsa", time: "09:34", isActive: false },
+];
   return (
+
+    
     <div>
       <Header></Header>
       <div>
@@ -42,26 +55,31 @@ const Coursereg = () => {
       </p>
     </div>
 
-    <div className="w-full lg:w-1/3 mt-8 lg:mt-16">
+    <div className="w-full lg:w-1/3 mt-8 lg:mt-16 ">
       <div className="w-full max-w-md mx-auto bg-white rounded-lg border-black shadow-md overflow-hidden">
         <div className="p-4">
           <h2 className="text-lg font-semibold text-blue-600 flex justify-between">
             Barcha Video Darsliklar <span className="text-gray-500 text-sm ">25 ta</span>
           </h2>
+
           <hr className="my-4" />
-          <div className="flex items-center p-3 bg-gray-100 rounded-lg shadow-sm">
-            <button className="w-12 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center">
-              <i className="fas fa-play"></i>
-            </button>
-            <div className="ml-4 flex justify-between items-center w-full">
-              <h2 className="text-sm font-medium text-gray-800">
-                Bo’g’in oxirida ikkitalik undosh bo’lsa keyingi bo’g’in
-              </h2>
-              <div className="flex items-center">
-                <span className="text-xs text-gray-500 mt-4 ml-4">12:34</span>
-                <span className="w-2 h-2 bg-blue-500 rounded-full ml-2 mt-4"></span>
-              </div>
-            </div>
+          <div className="max-w-md mx-auto h-96 overflow-y-auto">
+         {videos && videos.map((value, index) =>(
+           <div className="flex items-center p-3 bg-gray-100 rounded-lg shadow-sm " key={index}>
+           <button className="w-12 h-10 bg-blue-500 text-white rounded-full flex items-center justify-center">
+             <i className="fas fa-play"></i>
+           </button>
+           <div className="ml-4 flex justify-between items-center w-full">
+             <h2 className="text-sm font-medium text-gray-800">
+               {value.title}
+             </h2>
+             <div className="flex items-center">
+               <span className="text-xs text-gray-500 mt-4 ml-4">{value.time}</span>
+               <span className="w-2 h-2 bg-blue-500 rounded-full ml-2 mt-4"></span>
+             </div>
+           </div>
+         </div>
+         ))}
           </div>
         </div>
       </div>
