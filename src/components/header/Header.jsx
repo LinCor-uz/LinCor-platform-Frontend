@@ -1,7 +1,13 @@
 import React from 'react';
 import vector from '../../../public/vector.png';
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/login');
+    }
     return (
         <header className="bg-white shadow-md">
             <div className="max-w-[1440px] mx-auto px-6 py-4 flex items-center justify-between">
@@ -15,7 +21,6 @@ function Header() {
                     <a href="/course" className="text-gray-700 hover:text-blue-600 transition">
                         Kurslar
                     </a>
-                    
                     <a href="/topik" className="text-gray-700 hover:text-blue-600 transition">
                         Topik
                     </a>
@@ -31,7 +36,7 @@ function Header() {
                 </nav>
 
                 <div>
-                    <button
+                    <button onClick={handleClick}
                         className="flex items-center bg-blue-100 text-blue-600 px-4 py-2 rounded-full hover:bg-blue-200 transition"
                         aria-label="Kirish tugmasi"
                     >
